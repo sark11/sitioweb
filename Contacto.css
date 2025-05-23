@@ -1,0 +1,50 @@
+/* Definición de una variable para el color rojo-juancito, aunque en este caso es negro (rgb(0,0,0)) */
+:root {
+    --rojo-juancito: rgb(0, 0, 0);  /* Color negro */
+}
+
+/* Clase .bg-juancito que aplica el color de fondo negro definido anteriormente */
+.bg-juancito {
+    background-color: var(--rojo-juancito);  /* Aplica el color negro de la variable */
+}
+
+/* Estilo para el contenedor de la barra de progreso */
+#progress-container {
+    position: fixed;  /* Fija el contenedor en la parte superior de la página */
+    top: 0;  /* Se posiciona en la parte superior */
+    left: 0;  /* Se posiciona al borde izquierdo */
+    width: 100%;  /* Se extiende a lo largo de todo el ancho de la pantalla */
+    height: 5px;  /* Altura de la barra de progreso */
+    background: #ddd;  /* Color de fondo gris claro */
+    z-index: 1000;  /* Hace que la barra de progreso se ubique encima de otros elementos */
+}
+
+/* Estilo para la barra de progreso */
+#progress-bar {
+    height: 5px;  /* Altura de la barra de progreso */
+    width: 0%;  /* La barra de progreso comienza con un ancho de 0% */
+    background: #00ff0d;  /* Color verde de la barra de progreso */
+}
+
+/* Estilo para el body de la página, agrega espacio en la parte superior para evitar solapar el navbar */
+body{
+    padding-top: 50px;  /* Se añade un padding superior de 50px */
+}
+
+/* Estilo para el encabezado y los elementos con la clase display-4 */
+header, .display-4{
+    background-color: #006699;  /* Color de fondo azul */
+    color: #FFC107;  /* Color de texto amarillo */
+    font-weight: bold;  /* Hace que el texto esté en negrita */
+}
+
+/* Estilo para la clase .lead, utilizada en textos destacados, color blanco-azul y en negrita */
+.lead{
+    color: #D9E6F2;  /* Color blanco-azul claro */
+    font-weight: bold;  /* Texto en negrita */
+}
+
+/* Estilo para el contenedor principal, con fondo negro */
+main{
+    background-color: #000000;  /* Fondo negro para todo el main */
+}

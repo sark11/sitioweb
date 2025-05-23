@@ -1,0 +1,127 @@
+/* Definición de variables CSS */
+:root {
+    /* Se define un color rojo-juancito como negro (rgb(0,0,0)) para su uso posterior */
+    --rojo-juancito: rgb(0, 0, 0);
+}
+
+/* Estilo para la clase .bg-juancito, establece el color de fondo como el negro definido */
+.bg-juancito {
+    background-color: var(--rojo-juancito);
+}
+
+/* Estilo para el contenedor de la barra de progreso */
+#progress-container {
+    position: fixed;  /* Fija el contenedor de la barra en la parte superior */
+    top: 0;  /* Se posiciona en la parte superior de la página */
+    left: 0;  /* Alinea el contenedor al borde izquierdo */
+    width: 100%;  /* Ocupa todo el ancho de la pantalla */
+    height: 5px;  /* Altura de la barra de progreso */
+    background: #ddd;  /* Color de fondo del contenedor (gris claro) */
+    z-index: 1000;  /* Asegura que la barra de progreso esté encima de otros elementos */
+}
+
+/* Estilo para la barra de progreso en sí */
+#progress-bar {
+    position: relative;  /* Posicionamiento relativo para ajustar su ancho */
+    height: 5px;  /* Altura de la barra de progreso */
+    width: 0%;  /* Inicialmente, el ancho es 0% */
+    background: #00ff0d;  /* Color verde de la barra de progreso */
+}
+
+/* Estilo para el body de la página, agrega un padding superior para no solapar el navbar */
+body{
+    padding-top: 50px;
+}
+
+/* Estilo para el header y el título display-4 */
+header, .display-4{
+    background-color: #006699;  /* Color de fondo azul */
+    color: #FFC107;  /* Color de texto amarillo */
+    font-weight: bold;  /* Texto en negrita */
+}
+
+/* Estilo para el párrafo con clase .lead, color blanco-azul y negrita */
+.lead{
+    color: #D9E6F2;  /* Color blanco-azul */
+    font-weight: bold;
+}
+
+/* Estilo para el fondo del main */
+main{
+    background-color: #000000;  /* Color de fondo negro */
+}
+
+/* Estilo para los títulos dentro de #CANO */
+#CANO h1{
+    background-color: #95a5a6;  /* Fondo gris claro */
+    padding-bottom: 10px;  /* Espaciado en la parte inferior */
+    text-align: center;  /* Centra el texto */
+    color: #000000;  /* Color del texto negro */
+}
+
+/* Estilo para los párrafos dentro de #CANO */
+#CANO p{
+    background-color: #446888;  /* Fondo azul oscuro */
+    margin-right: 500px;  /* Espaciado en el lado derecho */
+    margin-left: 100px;  /* Espaciado en el lado izquierdo */
+    margin-top: 70px;  /* Espaciado superior */
+    border: 2px solid #ececec;  /* Borde claro alrededor del párrafo */
+    border-radius: 8px;  /* Bordes redondeados */
+    padding: 10px;  /* Espaciado interno */
+    font-size: 16px;  /* Tamaño de fuente */
+    color: #ffffff;  /* Color de texto blanco */
+    text-align: justify;  /* Alineación del texto justificado */
+}
+
+/* Media query para pantallas pequeñas (max-width: 768px) */
+@media (max-width: 768px) {
+    #CANO p {
+        margin-right: 5%;  /* Ajuste de margen derecho */
+        margin-left: 5%;  /* Ajuste de margen izquierdo */
+        margin-top: 3%;  /* Ajuste de margen superior */
+        font-size: 14px;  /* Tamaño de fuente reducido */
+    }
+}
+
+/* Estilo para el encabezado dentro de #Historia */
+#Historia h1{
+    text-align: center;  /* Centra el texto */
+    color: #FFC107;  /* Color de texto amarillo */
+}
+
+/* Estilo para los párrafos dentro de #Historia */
+#Historia p{
+    margin-top: 50px;  /* Margen superior */
+    margin-left: 300px;  /* Margen izquierdo */
+    margin-right: 300px;  /* Margen derecho */
+    margin-bottom: 10px;  /* Margen inferior */
+    text-align: justify;  /* Alineación del texto justificado */
+}
+
+/* Media query para pantallas pequeñas dentro de #Historia */
+@media (max-width: 768px) {
+    #Historia p {
+        text-align: justify;  /* Alineación del texto justificado */
+        margin-right: 5%;  /* Ajuste de margen derecho */
+        margin-left: 5%;  /* Ajuste de margen izquierdo */
+        margin-top: 3%;  /* Ajuste de margen superior */
+        font-size: 14px;  /* Tamaño de fuente reducido */
+    }
+}
+
+/* Estilo para la línea horizontal (hr) */
+hr{
+    color: #ffffff;  /* Color blanco para la línea */
+    width: 100%;  /* Ancho completo */
+    border-width: 20px;  /* Ancho de la línea */
+}
+
+/* Estilo general para los encabezados y párrafos dentro de cualquier section */
+section h1, p{
+    color: #ffffff;  /* Color de texto blanco */
+}
+
+/* Estilo para los encabezados h5 dentro de cualquier sección */
+section h5{
+    color: #FFC107;  /* Color de texto amarillo */
+}

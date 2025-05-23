@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANO-Un desarrollo sostenible</title>
+    <!-- Enlace al archivo CSS de Bootstrap para el estilo general -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace al archivo de estilos personalizados para la página de contacto -->
+    <link rel="stylesheet" href="Contacto.css">
+
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-juancito fixed-top">
+        <div class="container">
+            <!-- Barra de progreso en la parte superior -->
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <!-- Marca de la barra de navegación -->
+            <a class="navbar-brand">CANO - Un desarrollo sostenible</a>
+            <!-- Botón para alternar la visibilidad del menú en dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú desplegable en la barra de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces de navegación -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Página principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Menú.html">Nuestro producto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de encabezado con título y subtítulo -->
+    <header class="jumbotron  text-dark text-center py-5">
+        <div class="container">
+            <!-- Título principal de la página -->
+            <h1 class="display-4">"Innovación y Compromiso con la Movilidad de los Salvadoreños"</h1>
+            <!-- Subtítulo -->
+            <p class="lead">Transporte público más rápido, seguro y eficiente</p>
+        </div>
+    </header>
+
+    <main>
+
+
+    
+        <section id="contacto" class="py-5">
+            <div class="container">
+                <!-- Título principal de la sección de contacto -->
+                <h2 class="text-center mb-4" style="color: white;">Contacto</h2>
+                <!-- Descripción breve sobre cómo contactar -->
+                <p class="text-center mb-5" style="color:white;">Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+        
+                <!-- Formulario de contacto -->
+                <form action="#" method="POST" class="bg-white p-4 rounded shadow-sm">
+                    <div class="row">
+                        <!-- Campo para el nombre -->
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <!-- Campo para el correo electrónico -->
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <!-- Campo para el mensaje -->
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <!-- Botón para enviar el mensaje -->
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </div>
+                </form>
+        
+                <!-- Información adicional de contacto -->
+                <div class="mt-5">
+                    <h4 class="text-center mb-4" style="color: white;">Otra forma de contactarnos:</h4>
+                    <ul class="list-unstyled text-center">
+                        <!-- Número de teléfono de contacto -->
+                        <li style="color: white;"><i class="bi bi-telephone-fill"></i> Teléfono: +503 0945-9856</li>
+                        <!-- Correo electrónico de contacto -->
+                        <li style="color: white;"><i class="bi bi-envelope-fill"></i> Correo: empresacano@gmail.com</li>
+                        <!-- Dirección física de la empresa -->
+                        <li style="color: white;"><i class="bi bi-geo-alt-fill"></i> Dirección: Santa Ana, El Salvador</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        </main>
+        
+        <!-- Script de Bootstrap para los componentes interactivos -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+
+<script>
+    // Función que se activa cuando se hace scroll
+    window.onscroll = function() {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // Obtiene cuántos píxeles ha bajado
+        let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight; // Calcula la altura de la página menos la altura del navegador
+        let progress = (scrollTop / scrollHeight) * 100; // Convierte el scrolleo en porcentaje
+        document.getElementById("progress-bar").style.width = progress + "%"; // Ajusta la barra de progreso
+    };
+</script>
+
+    
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 CANO. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    
+</body>
+</html>
