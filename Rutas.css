@@ -1,0 +1,78 @@
+/* Definición de variables CSS */
+:root {
+    /* Color principal utilizado en el fondo, aquí se define como negro */
+    --rojo-juancito: rgb(0, 0, 0);
+}
+
+/* Establece el fondo para la clase bg-juancito */
+.bg-juancito {
+    background-color: var(--rojo-juancito);
+}
+
+/* Contenedor para la barra de progreso, se fija en la parte superior de la página */
+#progress-container {
+    position: fixed;  /* Fija el contenedor en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Se extiende a lo largo de todo el ancho */
+    height: 5px;
+    background: #ddd;  /* Fondo gris claro */
+    z-index: 1000;  /* Asegura que la barra se muestre por encima de otros elementos */
+}
+
+/* Barra de progreso que se ajusta a medida que el usuario hace scroll */
+#progress-bar {
+    height: 5px;  /* Altura de la barra de progreso */
+    width: 0%;  /* Inicialmente, la barra está vacía */
+    background: #00ff0d;  /* Color verde para la barra de progreso */
+}
+
+/* Espaciado superior en el cuerpo del documento */
+body {
+    padding-top: 50px;  /* Da espacio en la parte superior para la barra de navegación */
+}
+
+/* Estilo para el encabezado y el título */
+header, .display-4 {
+    background-color: #006699;  /* Fondo azul */
+    color: #FFC107;  /* Color de texto amarillo */
+    font-weight: bold;  /* Hacemos que el texto sea en negrita */
+}
+
+/* Estilo para el párrafo de clase "lead" */
+.lead {
+    color: #D9E6F2;  /* Color de texto azul claro */
+    font-weight: bold;  /* Texto en negrita */
+}
+
+/* Fondo para la sección principal */
+main {
+    background-color: #000000;  /* Fondo negro para el contenido principal */
+}
+
+/* Estilo para los encabezados h1 */
+h1 {
+    background-color: #95a5a6;  /* Fondo gris para los encabezados */
+    padding-bottom: 10px;  /* Espaciado inferior */
+    text-align: center;  /* Alineación central del texto */
+    color: #000000;  /* Color de texto negro */
+}
+
+/* Estilo para los párrafos dentro de main */
+main p {
+    color: white;  /* Color de texto blanco */
+    margin-left: 200px;  /* Margen izquierdo de 200px */
+    margin-right: 200px;  /* Margen derecho de 200px */
+    margin-top: 50px;  /* Margen superior de 50px */
+}
+
+/* Estilos para dispositivos móviles con ancho máximo de 768px */
+@media (max-width: 768px) {
+    main p {
+        margin-right: 5%;   /* Reducción del margen derecho */
+        margin-left: 5%;    /* Reducción del margen izquierdo */
+        margin-top: 3%;     /* Reducción del margen superior */
+        font-size: 14px;    /* Reducción del tamaño de la fuente */
+    }
+}
+

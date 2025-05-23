@@ -1,0 +1,113 @@
+/* Definición de variables CSS */
+:root {
+    /* Establece el color rojo-juancito como negro en formato RGB */
+    --rojo-juancito: rgb(0, 0, 0);
+}
+
+/* Establece el color de fondo de la clase .bg-juancito */
+.bg-juancito {
+    background-color: var(--rojo-juancito);  /* Asigna el color negro definido en la variable */
+}
+
+/* Estilo para el contenedor de la barra de progreso */
+#progress-container {
+    position: fixed;  /* Fija la barra de progreso en la parte superior de la pantalla */
+    top: 0;  /* Se alinea en la parte superior */
+    left: 0;  /* Se alinea en el borde izquierdo */
+    width: 100%;  /* La barra ocupa todo el ancho de la pantalla */
+    height: 5px;  /* La altura de la barra es de 5px */
+    background: #ddd;  /* Fondo gris claro para el contenedor de la barra */
+    z-index: 1000;  /* Asegura que la barra se muestre encima de otros elementos */
+}
+
+/* Estilo para la barra de progreso en sí */
+#progress-bar {
+    height: 5px;  /* Altura de la barra de progreso */
+    width: 0%;  /* Inicialmente, la barra de progreso está vacía */
+    background: #00ff0d;  /* Color verde para la barra de progreso */
+}
+
+
+    /* Estilo del mapa */
+#map { 
+    background-color: #446888; /* Color behind the map */
+    height: 500px; 
+    width: 80%; 
+    margin-top: 60px; 
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+@media(max-width:768px){
+    #map{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Contenido largo para probar el scroll */
+.content {
+    height: 2000px;
+    padding: 20px;
+}
+
+body{
+    padding-top: 50px;
+}
+
+header, .display-4{
+    background-color: #006699;
+    color: #FFC107;
+    font-weight: bold;
+}
+
+.lead{
+    color: #D9E6F2;
+    font-weight: bold;
+}
+
+main{
+    background-color: #000000;
+}
+#mapa h1{
+    background-color: #95a5a6;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.Rutas li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #FFD700; /* Cambia el color del enlace (puedes usar el color que desees) */
+}
+
+hr{
+    color: #ffffff;
+    border-width: 20px;
+}
+
+h5{
+    color:  #FFC107;
+}
+
+main {
+    color: white;
+}
+
+#Buses p{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+@media(max-width: 768px){
+    #Buses p{
+        text-align: justify;
+        margin-right: 5%;   
+        margin-left: 5%;    
+        margin-top: 3%;     
+        font-size: 14px; 
+    }
+
+}
